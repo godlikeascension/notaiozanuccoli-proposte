@@ -275,6 +275,38 @@ a {
 @media (max-width: 47.99em) {
     .gw-btn {
         align-self: stretch;
+        justify-self: stretch;
+    }
+}
+
+/* Le card condividono le righe della griglia: anteprima, etichetta, titolo,
+   testo, palette, font e bottone stanno alla stessa altezza in tutte e tre,
+   qualunque sia la lunghezza dei testi */
+@supports (grid-template-rows: subgrid) {
+    .gw-card {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 7;
+        row-gap: 0;
+    }
+
+    .gw-card__body {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 6;
+        row-gap: 0.875rem;
+        align-items: start;
+    }
+
+    .gw-btn {
+        margin-top: 0.5rem;
+        justify-self: start;
+    }
+
+    @media (max-width: 47.99em) {
+        .gw-btn {
+            justify-self: stretch;
+        }
     }
 }
 
