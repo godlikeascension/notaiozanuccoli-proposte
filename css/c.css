@@ -920,21 +920,6 @@ a.card h3 {
         padding-block: var(--space-8) var(--space-7);
     }
 }
-
-/* Testata con foto: testo a sinistra, immagine a destra */
-.page-head__grid {
-    display: grid;
-    gap: var(--space-6);
-}
-
-@media (min-width: 48em) {
-    .page-head__grid {
-        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-        gap: var(--space-8);
-        align-items: center;
-    }
-}
-
 /* 10. Elementi delle pagine ---------------------------------------------- */
 .cta {
     display: grid;
