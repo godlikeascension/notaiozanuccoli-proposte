@@ -774,27 +774,22 @@ a:hover > .link {
     color: var(--cognac);
 }
 
-/* Da tablet in su: una striscia compatta, etichetta e valore sulla stessa
-   riga, voci larghe quanto il loro testo. Se non ci stanno, va a capo la
-   voce intera, mai il testo al suo interno. */
-@media (min-width: 48em) {
+.facts .facts__label {
+    color: var(--cognac);
+}
+
+/* Su desktop tre blocchi da parte a parte: il primo a filo sinistro, l'ultimo
+   a filo destro, spazi uguali in mezzo. Il testo di un blocco non va mai a capo. */
+@media (min-width: 64em) {
     .facts__inner {
         display: flex;
-        flex-wrap: wrap;
-        gap: var(--space-3) var(--space-6);
-        padding-block: var(--space-4);
+        justify-content: space-between;
+        gap: var(--space-5);
         font-size: var(--text-sm);
     }
 
     .facts__item {
-        flex-direction: row;
-        align-items: baseline;
-        gap: var(--space-2);
         white-space: nowrap;
-    }
-
-    .facts .facts__label {
-        color: var(--cognac);
     }
 }
 
