@@ -130,11 +130,6 @@ a {
     }
 }
 
-@media (min-width: 72em) {
-    .gw-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
 
 .gw-card {
     display: flex;
@@ -208,6 +203,12 @@ a {
     font-family: "Instrument Sans", system-ui, sans-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
+    color: var(--c-black);
+}
+
+.gw-name--d {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
     color: var(--c-black);
 }
 
@@ -573,6 +574,54 @@ a {
 .gw-mock__cells i {
     height: 2.5rem;
     border-top: 1px solid var(--c-wine);
+}
+
+/* Proposta D: Marmo con i titoli di Rovere, ritratto e card */
+.gw-mock--d {
+    background: var(--c-white);
+    color: var(--c-black);
+    font-family: "Newsreader", Georgia, serif;
+}
+
+.gw-mock--d .gw-mock__bar {
+    border-color: var(--c-line);
+}
+
+.gw-mock--d .gw-mock__brand,
+.gw-mock--d .gw-mock__title {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+}
+
+.gw-mock--d .gw-mock__nav i {
+    background: var(--c-black);
+}
+
+.gw-mock--d .gw-mock__eyebrow {
+    font-family: "Fraunces", Georgia, serif;
+    color: var(--c-wine);
+}
+
+.gw-mock--d .gw-mock__btn--primary {
+    background: var(--c-wine);
+    border-radius: 999px;
+}
+
+.gw-mock--d .gw-mock__btn--secondary {
+    border: 1px solid var(--c-wine);
+    border-radius: 999px;
+}
+
+.gw-mock--d .gw-mock__cards {
+    margin: 0 -1.25rem -1.25rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--c-marble);
+}
+
+.gw-mock--d .gw-mock__cards i {
+    background: var(--c-white);
+    border: 1px solid var(--c-line);
+    border-radius: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
