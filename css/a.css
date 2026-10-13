@@ -394,6 +394,13 @@ a:hover > .link {
     color: var(--cream);
 }
 
+/* Su mobile i bottoni vanno da parte a parte, mai di larghezze diverse */
+@media (max-width: 47.99em) {
+    .btn {
+        width: 100%;
+    }
+}
+
 .section--dark .btn-primary {
     background: var(--cream);
     color: var(--navy);

@@ -403,6 +403,13 @@ a:hover .link {
     color: var(--white);
 }
 
+/* Su mobile i bottoni vanno da parte a parte, mai di larghezze diverse */
+@media (max-width: 47.99em) {
+    .btn {
+        width: 100%;
+    }
+}
+
 /* 6. Header e navigazione ------------------------------------------------ */
 .site-header {
     position: sticky;

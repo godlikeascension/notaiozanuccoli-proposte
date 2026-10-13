@@ -272,6 +272,12 @@ a {
     background: #000000;
 }
 
+@media (max-width: 47.99em) {
+    .gw-btn {
+        align-self: stretch;
+    }
+}
+
 /* Anteprime in miniatura delle due home ---------------------------------- */
 /* Altezza fissa: le tre anteprime finiscono alla stessa riga e i testi
    delle card partono allineati */
