@@ -244,6 +244,17 @@ a:hover .link {
     color: var(--wine);
 }
 
+/* Il grassetto usa il peso 500 già caricato, senza grassetto simulato */
+.prose strong,
+.accordion__body strong {
+    font-weight: 500;
+}
+
+/* Le ancore dell'indice non finiscono sotto l'header fisso */
+.prose h2[id] {
+    scroll-margin-top: calc(var(--header-h) + var(--space-5));
+}
+
 /* 4. Layout -------------------------------------------------------------- */
 .container {
     width: 100%;
@@ -836,6 +847,11 @@ a.card:hover {
     margin-top: var(--space-4);
 }
 
+/* Invito al modulo dei contatti, sotto il testo di schede e approfondimenti */
+.invito {
+    margin-top: var(--space-6);
+}
+
 @media (min-width: 48em) {
     .panel {
         padding: var(--space-6);
@@ -986,6 +1002,10 @@ a.card:hover {
     border-bottom: 1px solid var(--line);
 }
 
+.accordion details[id] {
+    scroll-margin-top: calc(var(--header-h) + var(--space-4));
+}
+
 .accordion summary {
     display: flex;
     align-items: center;
@@ -1034,6 +1054,24 @@ a.card:hover {
 }
 
 .accordion__body li::marker {
+    color: var(--wine);
+}
+
+.accordion__body > * + * {
+    margin-top: var(--space-3);
+}
+
+.accordion__body p {
+    max-width: 68ch;
+}
+
+.accordion__body a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-color: var(--wine);
+}
+
+.accordion__body a:hover {
     color: var(--wine);
 }
 
